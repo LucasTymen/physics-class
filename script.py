@@ -1,8 +1,8 @@
 # Uncomment this when you reach the "Use the Force" section
-# train_mass = 22680
-# train_acceleration = 10
-# train_distance = 100
-# bomb_mass = 1
+train_mass = 22680
+train_acceleration = 10
+train_distance = 100
+bomb_mass = 1
 
 
 # Write your code below:
@@ -14,7 +14,7 @@ def f_to_c(f_temp):
 
 #step 2
 f100_in_celsius = f_to_c(0)
-#print(f100_in_celsius)
+print(f100_in_celsius)
 
 #step 3
 def c_to_f(c_temp):
@@ -30,6 +30,8 @@ def get_force(mass, acceleration):
   return mass * acceleration
 
 #step 6
+train_force = get_force(train_mass, train_acceleration)
+print(train_force)
 #step 7
 #step 8
 #step 9
