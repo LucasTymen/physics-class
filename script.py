@@ -32,9 +32,25 @@ def get_force(mass, acceleration):
 #step 6
 train_force = get_force(train_mass, train_acceleration)
 print(train_force)
+
 #step 7
+print("The GE train supplies "+ str(train_force) + " Newtons of force.")
+
 #step 8
+def get_energy(mass,c=3*10**8):
+    return mass * c**2
+
 #step 9
+bomb_energy = get_energy(bomb_mass)
+
+#step 10
+print("A 1kg bomb supplies X Joules." + str(bomb_energy) + " Joules.")
+
 #step 11
+def get_work(mass, acceleration, distance):
+  return get_force * distance
+
 #step 12
+train_work = get_work(train_mass, train_acceleration, train_distance)
+
 #step 13
