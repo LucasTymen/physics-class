@@ -1,4 +1,5 @@
-#Write your function here
+#Write your function here:
+
 def every_three_nums(start):
   return list(range(start, 101, 3))
 
