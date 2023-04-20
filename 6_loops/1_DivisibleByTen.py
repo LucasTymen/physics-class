@@ -1,9 +1,9 @@
 #Write your function here
 def divisible_by_ten(nums):
-  counter = 0
-  for nums in counter:
-    if nums % 10 == 0:
-      counter +=1
+  count = 0
+  for number in nums:
+    if number % 10 == 0:
+      count += 1
       return nums
 
 #Uncomment the line below when your function is done
