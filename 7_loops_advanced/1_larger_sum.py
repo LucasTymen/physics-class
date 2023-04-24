@@ -1,13 +1,23 @@
 #Write your function here
-def larger_sum(lst1, lst2):
-    sum1 = 0
-    sum2 = 0
-    for number in lst1:
-        sum1 += number
-    for number in lst2:
-        sum2 += number
-    if sum1 > sum2:
-      return lst1
-    else: lst2
+def over_nine_thousand(lst):
+  sum = 0
+  for number in lst:
+    sum += number
+    if (sum > 9000):
+        break
+  return sum
+
 #Uncomment the line below when your function is done
-print(larger_sum([1, 9, 5], [2, 3, 7]))
+
+print(over_nine_thousand([8000, 900, 120, 5000]))
+
+
+################################################
+# alternative solution
+
+def max_num(nums):
+  maximum = nums[0]
+  for number in nums:
+    if number > maximum:
+      maximum = number
+  return maximum
